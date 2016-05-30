@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QzH-Xl-Gf3">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="157" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ade-fU-bjo">
+                                <rect key="frame" x="0.0" y="63" width="600" height="537"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="157" id="3vZ-O7-J4u">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="157"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3vZ-O7-J4u" id="rpA-kH-wHO">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="156"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="6TT-uF-Pxa"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="alR-yG-oI5"/>
+                                </connections>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nWI-c3-2M7">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="29"/>
+                                <segments>
+                                    <segment title="Lunch"/>
+                                    <segment title="Dinner"/>
+                                </segments>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="tblView" destination="ade-fU-bjo" id="eBE-y1-ime"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="193" y="867"/>
+        </scene>
+        <!--THSegmentedPager-->
+        <scene sceneID="qZR-0h-ru8">
+            <objects>
+                <viewController storyboardIdentifier="THSegmentedPager" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QzH-Xl-Gf3" customClass="THSegmentedPager" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0sh-NT-ue2"/>
+                        <viewControllerLayoutGuide type="bottom" id="OwF-8n-8OJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Kr-lb-Xt9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D5Y-GR-idm" customClass="HMSegmentedControl">
+                                <rect key="frame" x="0.0" y="64" width="600" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="gN1-1R-6Jb"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fll-L7-Oh9">
+                                <rect key="frame" x="0.0" y="124" width="600" height="444"/>
+                                <color key="backgroundColor" red="0.69019607839999997" green="0.80000000000000004" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="D5Y-GR-idm" firstAttribute="leading" secondItem="3Kr-lb-Xt9" secondAttribute="leading" id="2oq-8X-mdF"/>
+                            <constraint firstItem="fll-L7-Oh9" firstAttribute="top" secondItem="D5Y-GR-idm" secondAttribute="bottom" id="O7Z-vS-7JJ"/>
+                            <constraint firstItem="OwF-8n-8OJ" firstAttribute="top" secondItem="fll-L7-Oh9" secondAttribute="bottom" constant="32" id="U1Q-Wy-wpo"/>
+                            <constraint firstAttribute="trailing" secondItem="fll-L7-Oh9" secondAttribute="trailing" id="buo-KU-fyr"/>
+                            <constraint firstItem="fll-L7-Oh9" firstAttribute="leading" secondItem="3Kr-lb-Xt9" secondAttribute="leading" id="fyy-Xm-n4F"/>
+                            <constraint firstItem="D5Y-GR-idm" firstAttribute="top" secondItem="0sh-NT-ue2" secondAttribute="bottom" constant="44" id="vKd-O3-zu6"/>
+                            <constraint firstAttribute="trailing" secondItem="D5Y-GR-idm" secondAttribute="trailing" id="yut-ar-Acq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="THSegmentedPager" id="1K6-EN-itT"/>
+                    <connections>
+                        <outlet property="contentContainer" destination="fll-L7-Oh9" id="Iri-SB-b6I"/>
+                        <outlet property="pageControl" destination="D5Y-GR-idm" id="saG-w9-t2s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e7D-iP-r66" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="233" y="131"/>
+        </scene>
+    </scenes>
+</document>

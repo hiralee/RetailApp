@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>almirah</key>
+	<dict>
+		<key>name</key>
+		<string>Almirah</string>
+		<key>image</key>
+		<string>almirah</string>
+		<key>price</key>
+		<string>450</string>
+		<key>New item</key>
+		<string></string>
+	</dict>
+	<key>chair</key>
+	<dict>
+		<key>name</key>
+		<string>Chair</string>
+		<key>image</key>
+		<string>chair</string>
+		<key>price</key>
+		<string>240</string>
+	</dict>
+	<key>table</key>
+	<dict>
+		<key>name</key>
+		<string>Table</string>
+		<key>image</key>
+		<string>table</string>
+		<key>price</key>
+		<string>300</string>
+	</dict>
+	<key>television</key>
+	<dict>
+		<key>name</key>
+		<string>Television</string>
+		<key>image</key>
+		<string>television</string>
+		<key>price</key>
+		<string>1200</string>
+	</dict>
+	<key>vacuumCleaner</key>
+	<dict>
+		<key>name</key>
+		<string>Vacuum Cleaner</string>
+		<key>image</key>
+		<string>vacuumCleaner</string>
+		<key>price</key>
+		<string>800</string>
+	</dict>
+	<key>microwaveOven</key>
+	<dict>
+		<key>name</key>
+		<string>Microwave Oven</string>
+		<key>image</key>
+		<string>microwaveOven</string>
+		<key>price</key>
+		<string>100</string>
+	</dict>
+</dict>
+</plist>
